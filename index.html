@@ -1048,6 +1048,100 @@
             .perf-metrics { grid-template-columns: 1fr; }
             .perf-container { padding: 2rem; }
         }
+
+        /* ========== MOBILE RESPONSIVE ========== */
+        @media (max-width: 768px) {
+
+            /* Navbar */
+            .navbar {
+                padding: 1rem 1.25rem;
+                flex-wrap: wrap;
+                gap: 0.75rem;
+            }
+            .nav-links {
+                gap: 1.25rem;
+                flex-wrap: wrap;
+            }
+            .nav-link { font-size: 0.85rem; }
+
+            /* Hero */
+            .hero {
+                padding: 2.5rem 1.25rem 4rem;
+                min-height: auto;
+                background-position: center;
+            }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 0.95rem; }
+            .hero-features {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+            .badge { font-size: 0.7rem; }
+
+            /* App Section */
+            .app-section { padding: 0 1rem 2rem; }
+            .main-container {
+                grid-template-columns: 1fr;
+                padding: 1.5rem;
+                gap: 1.5rem;
+            }
+            .form-grid { grid-template-columns: 1fr; }
+
+            /* Gauge */
+            .gauge-container {
+                width: 180px;
+                height: 180px;
+            }
+            .gauge-value { font-size: 2.4rem; }
+
+            /* Bio Section */
+            .bio-section { padding: 2rem 1rem; }
+            .bio-container {
+                flex-direction: column-reverse;
+                padding: 1.5rem;
+                gap: 1.5rem;
+            }
+            .bio-title { font-size: 1.75rem; }
+            .bio-text { font-size: 0.95rem; }
+            .bio-image-wrapper {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 260px;
+                margin: 0 auto;
+            }
+            .bio-image { height: 260px; }
+
+            /* Performance Section */
+            .performance-section { padding: 1rem 1rem 2rem; }
+            .perf-container { padding: 1.5rem; }
+            .perf-metrics { grid-template-columns: 1fr; gap: 1rem; }
+            .perf-title { font-size: 1.5rem; }
+            .metric-card { padding: 1.25rem; gap: 1rem; }
+            .metric-value { font-size: 2rem; }
+
+            /* Footer / Social Cards */
+            .footer-profile { padding: 2.5rem 1rem 4rem; }
+            .social-cards {
+                flex-direction: column;
+                gap: 0.75rem;
+                width: 100%;
+                align-items: center;
+            }
+            .social-card {
+                min-width: unset;
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .hero h1 { font-size: 1.8rem; }
+            .navbar { padding: 0.85rem 1rem; }
+            .nav-links { gap: 0.85rem; }
+            .main-container { padding: 1rem; }
+            .gauge-container { width: 150px; height: 150px; }
+            .gauge-value { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
